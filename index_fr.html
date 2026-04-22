@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Pro | Le meilleur convertisseur de fichiers gratuit</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-overlay"></div>
+    <header>
+        <nav class="container">
+            <a href="index_fr.html" class="logo">
+                <i data-lucide="refresh-cw" class="logo-icon"></i>
+                <span>Converter<span>Pro</span></span>
+            </a>
+            <div class="nav-links">
+                <div class="lang-switcher">
+                    <button class="lang-btn"><i data-lucide="languages"></i> FR</button>
+                    <div class="lang-menu">
+                        <a href="index_ar.html">العربية</a>
+                        <a href="index_en.html">English</a>
+                        <a href="index_es.html">Español</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section container">
+            <div class="hero-content">
+                <h1 class="animate-up">Convertissez n'importe quoi, <span>n'importe où</span></h1>
+                <p class="animate-up delay-1">Outil cloud professionnel pour convertir tous types de fichiers avec Converter Pro.</p>
+                <div class="converter-box animate-up delay-2" id="dropZone">
+                    <div class="upload-icon-wrapper"><i data-lucide="upload-cloud" class="upload-icon"></i></div>
+                    <h2>Déposez les fichiers ici</h2>
+                    <button class="btn-select" onclick="document.getElementById('fileInput').click()">Sélectionner un fichier</button>
+                    <input type="file" id="fileInput" hidden multiple>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

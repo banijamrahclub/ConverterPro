@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Pro | #1 Free Cloud File Converter (Video, Audio, Image)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-overlay"></div>
+    <header>
+        <nav class="container">
+            <a href="index_en.html" class="logo">
+                <i data-lucide="refresh-cw" class="logo-icon"></i>
+                <span>Converter<span>Pro</span></span>
+            </a>
+            <div class="nav-links">
+                <div class="lang-switcher">
+                    <button class="lang-btn"><i data-lucide="languages"></i> EN</button>
+                    <div class="lang-menu">
+                        <a href="index_ar.html">العربية</a>
+                        <a href="index_es.html">Español</a>
+                        <a href="index_fr.html">Français</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section container">
+            <div class="hero-content">
+                <h1 class="animate-up">Convert Your Files <span>In One Click</span></h1>
+                <p class="animate-up delay-1">Leading cloud engine to convert all media types and documents with Converter Pro.</p>
+                <div class="converter-box animate-up delay-2" id="dropZone">
+                    <div class="upload-icon-wrapper"><i data-lucide="upload-cloud" class="upload-icon"></i></div>
+                    <h2>Drop Files Here to Start</h2>
+                    <p>Supports 200+ formats (Video, Audio, Image, PDF)</p>
+                    <input type="file" id="fileInput" hidden multiple>
+                    <button class="btn-select" onclick="document.getElementById('fileInput').click()">Select File From Device</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
