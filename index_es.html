@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converter Pro | El mejor convertidor de archivos gratuito</title>
+    
+    <title>Converter Pro | Convertidor de archivos gratuito - Video, Audio, Imagen</title>
+    <meta name="description" content="Convierta archivos gratis con Converter Pro. Herramienta en la nube para convertir MP4 a MP3, PNG a WebP y más con alta calidad. Seguro y rápido.">
+    <meta name="keywords" content="convertidor de archivos, convertir video a mp3, mp4 a mp3, convertir imagenes, convertidor cloud, gratis">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6680293729782435" crossorigin="anonymous"></script>
+
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿Cómo convertir video a MP3 en línea?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sube tu video a Converter Pro, selecciona MP3 como formato de destino y haz clic en Convertir. Tu archivo estará listo al instante."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Es segura mi información con Converter Pro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, usamos cifrado SSL y todos los archivos se eliminan automáticamente de nuestros servidores después de la conversión."
+        }
+      }]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6680293729782435"
-     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,20 +58,40 @@
             </div>
         </nav>
     </header>
+
     <main>
         <section class="hero-section container">
             <div class="hero-content">
-                <h1 class="animate-up">Convierte cualquier cosa, <span>en cualquier lugar</span></h1>
-                <p class="animate-up delay-1">Herramienta profesional en la nube para convertir todos los tipos de archivos con Converter Pro.</p>
-                <div class="converter-box animate-up delay-2" id="dropZone">
-                    <div class="upload-icon-wrapper"><i data-lucide="upload-cloud" class="upload-icon"></i></div>
+                <h1>El mejor <span>convertidor de archivos</span> online</h1>
+                <p>Convierte videos, imágenes y audio en un clic con nuestra tecnología cloud garantizada.</p>
+                <div class="converter-box" id="dropZone">
+                    <div class="upload-icon-wrapper"><i data-lucide="upload-cloud"></i></div>
                     <h2>Arrastra los archivos aquí</h2>
+                    <p>Soporta MP4, MP3, PNG, JPG y más</p>
+                    <input type="file" id="fileInput" hidden>
                     <button class="btn-select" onclick="document.getElementById('fileInput').click()">Seleccionar archivo</button>
-                    <input type="file" id="fileInput" hidden multiple>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-articles container">
+            <div class="article-grid">
+                <div class="article-card">
+                    <h2>¿Por qué elegir Converter Pro?</h2>
+                    <p>Nuestra plataforma ofrece velocidades de procesamiento ultrarrápidas gracias a los últimos procesadores en la nube. Calidad 100% garantizada.</p>
+                </div>
+                <div class="article-card">
+                    <h2>MP4 a MP3 de alta calidad</h2>
+                    <p>Extrae audio de tus videos favoritos con el bitrate más alto disponible para un sonido cristalino.</p>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="container">
+        <p>&copy; 2024 Converter Pro - El convertidor cloud #1.</p>
+    </footer>
+
     <script src="app.js"></script>
     <script>lucide.createIcons();</script>
 </body>
