@@ -73,8 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
             updateLog("جاري رفع الملف للمعالجة (الضغط 0% على جهازك)...");
             progressBar.style.width = '40%';
             
-            // إرسال للسيرفر مباشرة (Zero processing on client)
-            // الاتصال بسيرفر Render الحقيقي المرتبط بـ Cloudinary
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('format', format);
+
+            // الاتصال بسيرفر Render الحقيقي
             const response = await fetch('/api/convert', {
                 method: 'POST',
                 body: formData
